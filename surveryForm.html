@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+
+    <title>Favourite Animals</title>
+</head>
+
+<body>
+    <div class="container">     
+        <h1 id='title'>Favourite Animals</h1>
+        <p id="description" class="text-justify px-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ligula leo, accumsan vitae varius vitae, cursus mattis tortor. Suspendisse tortor erat, ultricies at augue sed, suscipit mollis libero. Donec urna libero, efficitur eget posuere sit amet, gravida eu mi. Integer maximus nisi sit amet erat volutpat venenatis.</p>
+            
+        <hr class="hr--short">
+
+          <!-- START Form -->  
+
+        <form id="survey-form">
+                <div class="row" class="form-group">
+                    <div class="col-md-6 col-sm-6">
+                        <label for="name" id="name-label">*Name:</label>
+                        <input type="text" id="name" placeholder="eg:Tom Jones" class="form-control" required>
+                    </div>    
+                    <div class="col-md-6 col-sm-6">
+                        <label for="email" id="email-label">*Email:</label>
+                        <input type="email" id="email" class="form-control" 
+                        placeholder="example@email.com" 
+                        required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row" class="form-group">
+                    <div class="col-md-6 col-sm-6">    
+                        <label for="number" id="number-label">*How many pets are in your household? </label>
+                        <input type="number" class="form-control" id="number" min="0" max="20" placeholder="no. of pets" required>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <label for="dropdown"  id="dropdown-label"></label> What's your favourite household animal?
+                        <select name="animals" id="dropdown" class="custom-select" size="1" required>
+                            <option value="">Select an option</option>
+                            <option value="dog">Dog</option>
+                            <option value="fox">Fox</option>
+                            <option value="cat">Cat</option>
+                            <option value="snake">Snake</option>
+                        </select> 
+                    </div>
+                </div>
+                <hr class="hr--short"> 
+                <!--End of radio button section-->
+                <div id="new-areas" class="form-group">
+                    <div class=" col-md-12">
+                        <p>* Select your favourite dog breeds from this limited list:</p>
+
+                        <div class="custom-control custom-radio custom-control-inline">    
+                            <input type="radio" id="husky-radio" name="breed" class="custom-control-input" value="Husky" required> 
+                            <label class="custom-control-label" for="husky-radio"> Husky </label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline" >
+                            <input type="radio" id="bloodhound-radio"name="breed" class="custom-control-input" value="Bloodhound" required> 
+                            <label class="custom-control-label" for="bloodhound-radio"> Bloodhound </label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline" >
+                            <input type="radio" id="border_collie-radio" name="breed" class="custom-control-input" value="Border Collie" required> 
+                            <label class="custom-control-label" for="border_collie-radio"> Border Collie </label> 
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline" >
+                            <input type="radio" id="alsatian-radio" name="breed" class="custom-control-input" value="Alsatian" required> 
+                            <label class="custom-control-label" for="alsatian-radio"> Alsatian </label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline" >
+                            <input type="radio" id="doberman-radio" name="breed" class="custom-control-input" value="Doberman" required> 
+                            <label class="custom-control-label" for="doberman-radio"> Doberman </label>
+                        </div>
+                    </div> 
+                </div>
+                <!--End of radio btn area-->
+
+                <hr class="hr--short">
+                <!-- Start of checkbox section -->
+                    <div class="form-group" id="activty">
+                        <p>Tell us about some activities you like to do at rest and play. Feel free to select as many as you wish</p>
+                        <!-- Section01 Activity start -->
+                        <div id="activity01">
+                            <p class="lead">Play time</p>    
+
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="tickle-check" value="Tickle">
+                                <label class="custom-control-label" for="tickle-check">Tickle</label>
+                            </div>    
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="throw-stick" value="throw-stick">
+                                <label class="custom-control-label" for="throw-stick">Throw Stick</label>
+                            </div>    
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="rough-house-check" value="Rough-house">
+                                <label class="custom-control-label" for="rough-house">Rough-house</label>
+                            </div>    
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="Hide-and-seek-check" value="Hide-and-seek">
+                                <label class="custom-control-label" for="Hide-and-seek-check">Hide-and-seek</label>
+                            </div>    
+                        </div>    
+                        <!-- Section 01 Activity End -->
+                        <!-- Section 02 Activity start -->
+                        <div id="activity02">
+                            <p class="lead">Rest time</p>    
+
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="stroke-feet-check" value="Stroke feet">
+                                <label class="custom-control-label" for="stroke-feet-check">Stroke feet</label>
+                            </div>    
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="belly-rub-check" value="Belly rub">
+                                <label class="custom-control-label" for="belly-rub-check">Belly rub</label>
+                            </div>    
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="Cuddle-check" value="Cuddle">
+                                <label class="custom-control-label" for="Cuddle-check">Cuddle</label>
+                            </div>    
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="ear-scratch-check" value="ear scratch">
+                                <label class="custom-control-label" for="ear-scratch">Ear scratch</label>
+                            </div>
+                        </div>
+                    </div>    
+                    <!-- Section 02 Activity End -->
+                    <hr class="hr--short"> 
+                    <!-- Additional comments section start -->
+                    <div class="form-row">
+                        <div class="col">
+                            <p>Anything extra to add? Please do so below:</p>
+                            <textarea class="form-control" name="basic" id="basic" cols="90" rows="5" placeholder="Any suggestion for improvements?"></textarea>
+                            <label for="basic" class="sr-only">Additional Comments</label>
+                        </div>
+                    </div>
+                    <!-- Additional comments section END -->
+
+                    <!-- Start Submit button -->
+                    <div class="form-row">
+                        <div class="col">
+                            <p class="mt-5 text-center">Ready to send us your input? Hit the button below</p>
+                            <input id="submit" type="submit" class="btn btn-primary btn-lg btn-block" value="submit"></input>
+                        </div>
+                    </div>
+                    <!-- Submit button END -->
+        </form>
+    </div> 
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

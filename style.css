@@ -1,0 +1,23 @@
+body {
+    /* background-color: lightblue; */
+    font-family: 'Oxygen', sans-serif;
+    background: url(pup-bg.jpg) no-repeat fixed center;
+  }
+
+h1#title {
+    text-align: center;
+  }
+.container {
+    background-color: rgba(250,250,250);
+    border-radius: 10px;
+  }
+.hr--short {
+    border-top: 1px solid #252427;
+    width: 80%;
+  }
+
+  #activity01, #activity02 {
+    margin-bottom: 30px;
+  }
+
+
